@@ -3,7 +3,7 @@
 <html>
 
 <head>
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <title>Test</title>
 <link rel="stylesheet" href="test.css">
 
@@ -11,22 +11,22 @@
 
 <body>
 
+<div id="icon-container">
+	<i class="fas fa-bars" id="icon"></i>
+</div>
+
 <div class="container">
 	<div id="elements-list" class="box">
-		<p>Select one element from the list below!</p>
-		<div class="card">
-		    <p>Card #7</p>
-		    <button type="button" onclick="addCard(7)">Add Me!</button>
-		</div>
-		<div class="card">
-		    <p>Card #3</p>
-		    <button type="button" onclick="addCard(3)">Add Me!</button>
-		</div>
-		<div class="card">
-		    <p>Card #2</p>
-		    <button type="button" onclick="addCard(2)">Add Me!</button>
-		</div>
+		<p id="select-text">Select one element from the list below!</p>
+		   	<ul id="card-trigger">
+		        <li><a href="javascript:void(0)" data-sku="7">post 7</a></li>
+		        <li><a href="javascript:void(0)" data-sku="3">post 3</a></li>
+		        <li><a href="javascript:void(0)" data-sku="2">post 2</a></li>
+	    	</ul>
+    	<a href="javascript:void(0)" id="remover">remove cards</a>
+		
 	</div>
+
 	<div class="box">
 		<div>Here you'll see elements you added:</div>
 		<div id="cards-holder"></div>
